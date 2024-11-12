@@ -1,0 +1,71 @@
+ /* dialogs */
+  .dialog, .mainDrawer, .appfooter {
+	  backdrop-filter: blur(21px);
+	  background-color: rgba(var(--dark), 0.75) !important;
+	  box-shadow: 0 0 1.9vh #000;
+  }
+  .dialog, .appfooter {
+	  border-radius: var(--rounding-large) !important;
+  }
+  .mainDrawer {
+	  border-top-right-radius: var(--rounding-large) !important;
+	  border-bottom-right-radius: var(--rounding-large) !important;
+  }
+
+  .toast {
+	  background-color: rgba(var(--accent-off), 0.75) !important;
+	  color: rgba(var(--darkest), 1) !important;
+	  text-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
+	  font-weight: bold;
+  }
+  .appfooter,
+  .dialog,
+  .mainDrawer,
+  .toast {
+    backdrop-filter: blur(21px);
+    box-shadow: 0 0 1.9vh #000;
+  }
+
+  .actionSheetContent {
+	  padding: 0.4em 0 !important;
+	  margin-left: 0.75em !important;
+	  margin-right: 0.75em !important;
+	  margin-top: 0.35em !important;
+	  margin-bottom: 0.35em !important;
+  }
+
+  .navMenuOption-selected, .selectionCommandsPanel {
+	  color: rgba(var(--darkest), 1) !important;
+	  background-color: rgba(var(--accent), 0.55) !important;
+	  backdrop-filter: blur(4px);
+  }
+
+  .raised, .fab, a[data-role="button"] {
+    background: rgba(var(--accent), 0.75) !important;
+    color: rgba(var(--darkest), 1) !important;
+  }
+
+  div[data-role="controlgroup"] a.ui-btn-active {
+	  background: rgb(var(--accent)) !important;
+	  color: rgba(var(--darkest), 1) !important;
+  }
+
+  /* changes the color of icons in various places such as settings > activity, settings> notifications, subtitle results, etc*/
+  #peopleList .material-icons.listItemIcon.person, 
+  #listGenres .material-icons.listItemIcon.live_tv,
+  #listStudios .material-icons.listItemIcon.live_tv,
+  #listTags .material-icons.listItemIcon.live_tv,
+  #repositories .listItemIcon:not(.listItemIcon-transparent),
+  #dlnaProfilesPage .listItemIcon:not(.listItemIcon-transparent),
+  #homeScreenPreferencesPage .material-icons.listItemIcon.folder_open,
+  .subtitleList .material-icons.listItemIcon.closed_caption,
+  .subtitleResults .material-icons.listItemIcon.closed_caption {
+    background: rgba(var(--accent-off), 1) !important;
+    color: rgba(var(--darkest), 1) !important;
+  }
+
+  /* fixes alignment of download and delete icons in edit subtitle screen */
+  .subtitleList, .btnDelete.listItemButton.paper-icon-button-light,
+  .subtitleResults .btnDownload.listItemButton.paper-icon-button-light {
+    margin-right: 1em;
+  }
